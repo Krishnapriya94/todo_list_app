@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo_list_app/utils/app_sessions.dart';
 import 'package:todo_list_app/view/get_started_screen/get_started_screen.dart';
+import 'package:todo_list_app/view/splash_screen/splash_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GetStartedScreen(),
+      home: SplashScreen(),
     );
   }
 }
